@@ -1,7 +1,15 @@
-import React from "react";
+import { ProductModel } from "../Model";
 
-const Product = () => {
-  return <div>Product</div>;
+interface ProductItemProps {
+  product: ProductModel;
+}
+
+const Product: React.FC<ProductItemProps> = ({ product }) => {
+  return (
+    <div>
+      <p>{product.title}</p>
+    </div>
+  );
 };
 
 export default Product;

@@ -1,7 +1,7 @@
 import "./App.css";
 import ProductsList from "./Components/ProductsList";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div className="App">
       <h2>Shopping Cart</h2>
